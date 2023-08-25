@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is ecommerce project">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ecommerce</title>
+</head>
+<body>
+    <!-- navbar start here -->
+    <i class="fas fa-bars fa-2x" id="menu_icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav_upper flex_space_around">
+            <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
+            <li class="nav_list"><a href="register.html" class="nav_link">Register</a></li>
+            <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+            <li class="nav_list"><a href="index.html" class="nav_link">Logout</a></li>
+            <li class="nav_list"><a href="contact.html" class="nav_link">Contact</a></li>
+            <li class="nav_list"><a href="profile.html" class="nav_link"><img class="profile_icon" src="img/profile.jpg" alt="profile icon"></a></li> 
+        </ul>
+    </nav>
+    <!-- navbar ends here -->
+
+    <main class="flex-center">
+        <div class="main_content">
+            <section class="product_details flex-center">
+                <div class="product_details_left flex-center">
+                    <img class="img product_details_img" src="img/p1.jpg" alt="product1">
+                </div>
+                <div class="product_details_right">
+                    <h3 class="product_name">Voice assistent</h3>
+                            <p>
+                                <span class="dot green"></span>
+                                <span class="dot black"></span>
+                                <span class="dot red"></span>
+                            </p>
+                            <p class="product_description">
+                                <strong>description</strong>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, tempore inventore fugiat facere quam placeat distinctio nemo odio minus provident atque possimus quod ex natus?
+                            </p>
+                            <p class="product_description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, tempore inventore fugiat facere quam placeat distinctio nemo odio minus provident atque possimus quod ex natus?
+                            </p>
+                            <h4 class="product_price">206$</h4>
+                            <button class="btn product_button">Add to cart</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- footer start herer -->
+    <footer class="footer flex_space_around">
+        <div class="flex_space_around">
+            <label for="subscribe">Subscribe to news letter: </label>
+            <input type="email" id="subscribe" name="subscribe" class="footer_input" placeholder="Email address">
+            <button class="btn btn_subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; Copyright bassam shop. All rights</p>
+        </div>
+    </footer>
+    <!-- footer end herer -->
+    <script src="./script/index.js"></script>
+</body>
+</html>

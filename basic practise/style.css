@@ -1,0 +1,28 @@
+p{
+	color:green
+}
+.red{
+	color:red
+}
+.bold{
+	font-weight:bold
+}
+.white{
+	color:#ff6699
+}
+.line{
+	text-decoration:
+	line-through;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 100%;
+	text-transform: uppercase;
+	
+	font: italic small-caps bold 50px/150% Arial;
+}
+.bangla{
+	color:orange;
+	font-weight: bold;
+}

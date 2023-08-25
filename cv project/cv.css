@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: azure;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1000px;
+    background-color: rgb(199, 248, 232);
+    margin: 0 auto;
+    padding: 10px;
+}
+header{
+
+}
+.pro-img{
+    width: 100px;
+    height: 120px;
+    border: 3px solid #d4d3d3;
+    border-radius: 45%;
+    float: left;
+}
+.headerBio{
+    float: left;
+    padding: 30px;
+}
+h1,h2,h3,h4,h5,h6{
+    color: rgb(3, 155, 96);
+}
+.contact{
+    float: right;
+    padding: 40px;
+}
+.contact a{
+    text-decoration: none;
+    color: rgb(3, 155, 96);
+    font-weight: bold;
+}
+.contact a:hover{
+    color: rgb(2, 195, 182);
+}
+hr{
+    border: solid black 3px;
+    margin: 20px auto;
+    border-bottom: none;
+}
+.clear{
+    clear: both;
+}
+#personal-section{
+
+}
+.content{
+
+}
+.left-div{
+    width: 30%;
+    float: left;
+}
+.right-div{
+    width: 70%;
+    float: left;
+    text-align: justify;
+}
+.common-hr{
+    border: solid black 1px;
+    border-bottom: none;
+    width: 100%;
+    margin: 20px auto;
+}
+.clear-div{
+    clear: both;
+}
+.edu-left{
+    float: left;
+    width: 45%;
+}
+.edu-right{
+    float: right;
+    width: 45%;
+}
+.bottom{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+.bottom a{
+    color: white;
+    text-decoration: none;
+}
+.bottom p{
+    color: white;
+}

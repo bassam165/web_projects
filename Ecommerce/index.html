@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is ecommerce project">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ecommerce</title>
+</head>
+<body>
+    <!-- navbar start here -->
+    <i class="fas fa-bars fa-2x" id="menu_icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav_upper flex_space_around">
+            <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
+            <li class="nav_list"><a href="register.html" class="nav_link">Register</a></li>
+            <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+            <li class="nav_list"><a href="index.html" class="nav_link">Logout</a></li>
+            <li class="nav_list"><a href="contact.html" class="nav_link">Contact</a></li>
+            <li class="nav_list"><a href="profile.html" class="nav_link"><img class="profile_icon" src="img/profile.jpg" alt="profile icon"></a></li> 
+        </ul>
+        <ul class="nav_lower flex_space_around">
+            <li class="nav_list nav_brand"><a href="index.html">Bassam shop</a></li>
+            <li class="nav_list"><a href="cart.html"><span><i class="fas fa-shopping-cart"></i></span>Cart:  3 product - 125.56$
+            </a></li>
+        </ul>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- header starts here -->
+    <header class="header">
+        <div class="banner flex_space_around">
+            <marquee class="banner_tittle" behavior="" direction="">50% sales going on</marquee>
+        </div>
+        <div class="features flex_space_around">
+            <article class="feature flex-center">
+                <i class="fa-solid fa-truck feature_icon"></i>
+                <h3>Shipping within 7 days</h3>
+            </article>
+            <article class="feature flex-center">
+                <i class="fas fa-credit-card feature_icon"></i>
+                <h3>safe payment</h3>
+            </article>
+            <article class="feature flex-center">
+                <i class="fa-brands fa-rocketchat feature_icon"></i>
+                <h3>Suport 24/7</h3>
+            </article>
+        </div>
+    </header>
+    <!-- header end here -->
+    <main class="flex-center">
+        <div class="sidebar">
+            <section class="categories_section">
+                <h3 class="section_tittle">Categories</h3>
+                <ul class="list">
+                    <li class="list_iteam">
+                        <label for="phone"><input type="checkbox" name="phone" id="phone" value="phone">Phone</label>
+                    </li>
+                    <li class="list_iteam">
+                        <label for="tablet"><input type="checkbox" name="tablet" id="tablet" value="tablet">Tablets</label>
+                    </li>
+                    <li class="list_iteam">
+                        <label for="television"><input type="checkbox" name="television" id="television" value="television">Television</label>
+                    </li>
+                    <li class="list_iteam">
+                        <label for="headphone"><input type="checkbox" name="headphone" id="headphone" value="headphone">headphone</label>
+                    </li>
+                    <li class="list_iteam">
+                        <label for="computer"><input type="checkbox" name="computer" id="computer" value="computer">computer</label>
+                    </li>
+                </ul>
+            </section>
+                <section class="price_section">
+                    <h3 class="section_tittle">Price range</h3>
+                    <ul class="list">
+                        <li class="list_iteam">
+                            <label for="price1"><input type="radio" name="price1" id="price1" value="[0,20]">$0-$20</label>
+                        </li>
+                        <li class="list_iteam">
+                            <label for="price2"><input type="radio" name="price2" id="price2" value="[21,50]">$21-$50</label>
+                        </li>
+                        <li class="list_iteam">
+                            <label for="price3"><input type="radio" name="price3" id="price3" value="[51,100]">51-$100</label>
+                        </li>
+                        <li class="list_iteam">
+                            <label for="price4"><input type="radio" name="price2" id="price2" value="[100,200]">$100-$200</label>
+                        </li>
+                    </ul>
+                </section>
+                <section class="shiping_section">
+                    <h3 class="section_tittle">Shiping options</h3>
+                    <ul class="list">
+                        <li class="list_iteam">
+                            <label for="free"><input type="radio" name="shiping" id="free" value="free">Free</label>
+                        </li>
+                        <li class="list_iteam">
+                            <label for="paid"><input type="radio" name="shiping" id="paid" value="paid">paid</label>
+                        </li>
+                    </ul>
+                </section>
+        </div>
+        <div class="main_content">
+            <section class="action flex_space_around">
+                <div class="action_sort">
+                    <label for="sort">Sort By: </label>
+                    <select name="sort" id="sort">
+                        <option value="sold">Most sold first</option>
+                        <option value="rating">Most rated</option>
+                        <option value="price">Most chepest</option>
+                        <option value="arival">New arival</option>
+                    </select>
+                </div>
+                <div class="action_search">
+                    <input type="text" placeholder="Search">
+                    <button class="btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </section>
+            <section class="products">
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stoke</span>
+                        <hr class="hr_design">
+                        <span>3 sold</span>
+                        <img class="product_img" src="/img/p1.jpg" alt="product1">
+                        <div class="product_body">
+                            <h3 class="product_name">Voice assistent</h3>
+                            <p>
+                                <span class="dot green"></span>
+                                <span class="dot black"></span>
+                                <span class="dot red"></span>
+                            </p>
+                            <p class="product_description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nisi ut provident saepe libero voluptas!...<a href="product.html" style="color: black;">Learn more</a>
+                            </p>
+                            <h4 class="product_price">206$</h4>
+                            <button class="btn product_button">Add to cart</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stoke</span>
+                        <hr class="hr_design">
+                        <span>3 sold</span>
+                        <img class="product_img" src="/img/p2.jpg" alt="product1">
+                        <div class="product_body">
+                            <h3 class="product_name">Lip stick</h3>
+                            <p>
+                                <span class="dot green"></span>
+                                <span class="dot black"></span>
+                                <span class="dot red"></span>
+                            </p>
+                            <p class="product_description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nisi ut provident saepe libero voluptas!...<a href="product.html" style="color: black;">Learn more</a>
+                            </p>
+                            <h4 class="product_price">206$</h4>
+                            <button class="btn product_button">Add to cart</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stoke</span>
+                        <hr class="hr_design">
+                        <span>3 sold</span>
+                        <img class="product_img" src="/img/p3.jpg" alt="product1">
+                        <div class="product_body">
+                            <h3 class="product_name">Shoe</h3>
+                            <p>
+                                <span class="dot green"></span>
+                                <span class="dot black"></span>
+                                <span class="dot red"></span>
+                            </p>
+                            <p class="product_description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nisi ut provident saepe libero voluptas!...<a href="product.html" style="color: black;">Learn more</a>
+                            </p>
+                            <h4 class="product_price">206$</h4>
+                            <button class="btn product_button">Add to cart</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stoke</span>
+                        <hr class="hr_design">
+                        <span>3 sold</span>
+                        <img class="product_img" src="/img/p4.jpg" alt="product1">
+                        <div class="product_body">
+                            <h3 class="product_name">Toys</h3>
+                            <p>
+                                <span class="dot green"></span>
+                                <span class="dot black"></span>
+                                <span class="dot red"></span>
+                            </p>
+                            <p class="product_description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nisi ut provident saepe libero voluptas!...<a href="product.html" style="color: black;">Learn more</a>
+                            </p>
+                            <h4 class="product_price">206$</h4>
+                            <button class="btn product_button">Add to cart</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stoke</span>
+                        <hr class="hr_design">
+                        <span>3 sold</span>
+                        <img class="product_img" src="/img/p5.jpg" alt="product1">
+                        <div class="product_body">
+                            <h3 class="product_name">Loffer</h3>
+                            <p>
+                                <span class="dot green"></span>
+                                <span class="dot black"></span>
+                                <span class="dot red"></span>
+                            </p>
+                            <p class="product_description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nisi ut provident saepe libero voluptas!...<a href="product.html" style="color: black;">Learn more</a>
+                            </p>
+                            <h4 class="product_price">206$</h4>
+                            <button class="btn product_button">Add to cart</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stoke</span>
+                        <hr class="hr_design">
+                        <span>3 sold</span>
+                        <img class="product_img" src="/img/p6.jpg" alt="product1">
+                        <div class="product_body">
+                            <h3 class="product_name">Bottle</h3>
+                            <p>
+                                <span class="dot green"></span>
+                                <span class="dot black"></span>
+                                <span class="dot red"></span>
+                            </p>
+                            <p class="product_description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nisi ut provident saepe libero voluptas!...<a href="product.html" style="color: black;">Learn more</a>
+                            </p>
+                            <h4 class="product_price">206$</h4>
+                            <button class="btn product_button">Add to cart</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <div class="pagination">
+                <button class="btn btn_pegination">
+                    <i class="fas fa-less-than"></i>
+                </button>
+                <button class="btn btn_pegination">2</button>
+                <button class="btn btn_pegination">3</button>
+                <button class="btn btn_pegination">4</button>
+                <button class="btn btn_pegination">5</button>
+                <button class="btn btn_pegination">6</button>
+                <button class="btn btn_pegination">7</button>
+                <button class="btn btn_pegination">8</button>
+                <button class="btn btn_pegination">9</button>
+                <button class="btn btn_pegination">
+                    <i class="fas fa-greater-than"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+    <!-- footer start herer -->
+    <footer class="footer flex_space_around">
+        <div class="flex_space_around">
+            <label for="subscribe">Subscribe to news letter: </label>
+            <input type="email" id="subscribe" name="subscribe" class="footer_input" placeholder="Email address">
+            <button class="btn btn_subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; Copyright bassam shop. All rights</p>
+        </div>
+    </footer>
+    <!-- footer end herer -->
+    <script src="./script/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+table{
+	width:250px;
+	text-align:center;
+	margin:0 auto;
+	background-color:#ddd;
+}
+table, th, td{
+	border-collapse:collapse;
+	border:2px solid green;
+}
+.id1{
+	background-color:green;
+	color:#fff;
+}
+table caption{
+	background-color:#ddd;
+}
