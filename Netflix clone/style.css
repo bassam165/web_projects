@@ -92,3 +92,170 @@ nav button{
     cursor: pointer;
     padding: 10px 30px;
 }
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text_col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img_col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img_col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+}
+.according{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.according li{
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+}
+.according li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 05s;
+}
+input[type="radio"]{
+    display: none;
+}
+.according .content{
+    background: #303030;
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.according input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.according input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .laguage_btn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.copy_right{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .logo{
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    nav .laguage_btn{
+        padding: 4px 8px;
+    }
+    .header_content{
+        position: unset;
+        transform: none;
+        padding-top: 15px;
+    }
+    .header_content h1{
+        font-size: 30px;
+    }
+    .emal_signup button{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .text_col, .img_col{
+        flex-basis: 100%;
+    }
+    .feature h2{
+        font-size: 30px;
+    }
+    .feature p{
+        font-size: 15px;
+    }
+    .row:nth-child(2), .row:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .feature .row{
+        padding: 10px 0;
+    }
+    .faq h2{
+        font-size: 20px;
+    }
+    .according .content{
+        font-size: 14px;
+    }
+    .according li label{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
