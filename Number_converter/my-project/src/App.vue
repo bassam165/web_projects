@@ -10,7 +10,7 @@
                 <div class="input_group">
                     <label for="">Decimal</label>
                     <input type="text" placeholder="Input any decimal number"
-                    v-model="numbers.dcimal">
+                    v-model="numbers.decimal">
                 </div>
                 <div class="input_group">
                     <label for="">Binary</label>
@@ -43,7 +43,7 @@ export default {
   data(){
     return{
       numbers:{
-        dcimal: 0,
+        decimal: 0,
         binary: 0,
         octal: 0,
         hexadcimal: 0,
